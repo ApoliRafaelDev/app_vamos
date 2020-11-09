@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_assistidos"
+            android:title="@string/nav_assistidos"
+            android:icon="@drawable/ic_baseline_people_alt_24"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/nav_cadastrar"
+            android:title="@string/nav_cadastrar"
+            android:icon="@drawable/ic_baseline_person_add_24"
+
+            />
+
+        <item
+            android:id="@+id/nav_config"
+            android:title="@string/nav_config"
+            android:icon="@drawable/ic_baseline_settings_24"
+            />
+
+
+    </group>
+
+</menu>
