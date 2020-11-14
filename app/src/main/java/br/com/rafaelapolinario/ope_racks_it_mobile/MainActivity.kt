@@ -1,5 +1,6 @@
 package br.com.rafaelapolinario.ope_racks_it_mobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -7,12 +8,17 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.navigation_view.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : DebugActivity() {
+
+    private var assistidos = listOf<Assistido>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,9 +30,27 @@ class MainActivity : DebugActivity() {
         this.genericMenuLateral = menu_lateral
 
         configuraMenuLateral()
+
+        recyclerAssistidos?.layoutManager = LinearLayoutManager(this)
+        recyclerAssistidos?.itemAnimator = DefaultItemAnimator()
+        recyclerAssistidos?.setHasFixedSize(true)
     }
 
+    override fun onResume(){
+        super.onResume()
+        taskAssistidos()
+    }
 
+    fun taskAssistidos(){
+        this.assistidos = AssistidoService.getAssistido()
+        recyclerAssistidos?.adapter = AssistidoAdapter(this.assistidos){onClickAssistidos(it)}
+    }
+
+    fun onClickAssistidos(assistido: Assistido){
+        var it = Intent(this, AssistidoActivity::class.java)
+        it.putExtra("assistido", assistido)
+        startActivity(it)
+    }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)

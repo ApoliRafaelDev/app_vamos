@@ -37,7 +37,8 @@ open class DebugActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 startActivity(intent)
             }
             R.id.nav_cadastrar -> {
-                Toast.makeText(this, "Menu Cadastrar", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, CadastroActivity::class.java)
+                startActivity(intent)
             }
             R.id.nav_config -> {
                 val intent = Intent(this, ConfigActivity::class.java)
