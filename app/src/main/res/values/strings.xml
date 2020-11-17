@@ -1,21 +1,12 @@
 <resources>
-    <string name="app_name">V.A.M.O.S.</string>
+    <string name="app_name">CoinTracker</string>
     <string name="search_screen">Tela de Pesquisa</string>
     <string name="list_screen">Tela de Listagem</string>
     <string name="main_screen">Tela Inicial</string>
-    <string name="bem_vindo">Bem-vindo(a) \nà V.A.M.O.S!</string>
+    <string name="bem_vindo">Bem-vindo(a) \nao CoinTracker!</string>
     <string name="faca_login">Faça login para continuar</string>
     <string name="username">Nome de usuário</string>
     <string name="senha">Senha</string>
     <string name="botao_login">LOGIN</string>
     <string name="refresh">Refresh</string>
-    <string name="action_buscar">Buscar</string>
-    <string name="action_adicionar">Adicionar</string>
-    <string name="action_atualizar">Atualizar</string>
-    <string name="msg_inicial">Mensagem Inicial</string>
-    <string name="nav_assistidos">Assistidos</string>
-    <string name="nav_cadastrar">Cadastrar</string>
-    <string name="nav_config">Configurações</string>
-    <string name="nav_drawer_open">Abrir</string>
-    <string name="nav_drawer_close">Fechar</string>
 </resources>

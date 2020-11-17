@@ -37,14 +37,13 @@
         android:id="@+id/username"
         android:layout_width="126dp"
         android:layout_height="22dp"
+        android:layout_marginBottom="328dp"
         android:text="@string/username"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_vamos"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/senha"
@@ -96,29 +95,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/logo_vamos"
-        android:layout_width="329dp"
-        android:layout_height="153dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/faca_login"
-        app:layout_constraintVertical_bias="0.098"
-        app:srcCompat="@drawable/ic_vamos" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botao_login"
-        app:layout_constraintVertical_bias="0.321" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

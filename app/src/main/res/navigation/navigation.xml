@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmento_inicial">
+
+    <fragment
+        android:id="@+id/fragmento_inicial"
+        android:name="br.com.rafaelapolinario.ac_desmobile.fragmento_inicial"
+        android:label="fragment_fragmento_inicial"
+        tools:layout="@layout/fragment_fragmento_inicial" />
+
+    <fragment
+        android:id="@+id/fragmento_lista"
+        android:name="br.com.rafaelapolinario.ac_desmobile.fragmento_lista"
+        android:label="fragment_fragmento_lista"
+        tools:layout="@layout/fragment_fragmento_lista" />
+
+    <fragment
+        android:id="@+id/fragmento_pesquisa"
+        android:name="br.com.rafaelapolinario.ac_desmobile.fragmento_pesquisa"
+        android:label="fragment_fragmento_pesquisa"
+        tools:layout="@layout/fragment_fragmento_pesquisa" />
+</navigation>

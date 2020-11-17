@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "OPE_RACKS_IT_mobile"
+rootProject.name = "ac_desmobile"
